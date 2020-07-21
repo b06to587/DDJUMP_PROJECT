@@ -16,10 +16,11 @@ public class Obstacle : MonoBehaviour
     {
         
     }
-
+    //생겨났을때 바로 실행되는 코드 
     private void OnEnable()
     {
-        if(boxCollider2D == null)
+        Debug.Log("테스트 디버그");
+        if (boxCollider2D == null)
         {
             boxCollider2D = GetComponent<BoxCollider2D>();
         }
